@@ -6,12 +6,12 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
 model User {
-  id        String   @id @default(uuid())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
   githubId  Int      @unique
   name      String
   login     String
@@ -20,7 +20,7 @@ model User {
 }
 
 model Memory {
-  id       String   @id @default(uuid())
+  id       String   @id @default(auto()) @map("_id") @db.ObjectId
   coverUrl String
   content  String
   isPublic Boolean  @default(false)
