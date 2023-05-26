@@ -11,6 +11,13 @@
       "config": {
         "prisma": "prisma/schema.prisma",
         "database": "mongodb+srv://lcspaiva:FmyKUhIRQ801IUqL@cluster0.rplqvhe.mongodb.net/memorie?retryWrites=true"
+      },
+      "config": {
+        "prisma": "prisma/schema.prisma",
+        "database": "mongodb+srv://lcspaiva:FmyKUhIRQ801IUqL@cluster0.rplqvhe.mongodb.net/memorie?retryWrites=true"
+      },
+      "env": {
+        "PRISMA_GENERATE": "true"
       }
     }
   ],
