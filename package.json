@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prisma": "prisma generate",
     "dev": "tsx watch src/server.ts",
-    "build": "tsc",
+    "build": "prisma generate &&  tsc",
     "lint": "eslint src --ext .ts --fix"
   },
   "keywords": [],
