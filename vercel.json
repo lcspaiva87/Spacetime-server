@@ -2,28 +2,13 @@
   "version": 2,
   "builds": [
     {
-      "src": "prisma",
-      "use": "@prisma/cli",
-      "config": {
-        "prisma": "prisma/schema.prisma",
-        "database": "mongodb+srv://lcspaiva:FmyKUhIRQ801IUqL@cluster0.rplqvhe.mongodb.net/memorie?retryWrites=true"
-      },
-      "env": {
-        "PRISMA_GENERATE": "true"
-      }
-    },
-    {
       "src": "src/server.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/prisma",
-      "dest": "prisma"
-    },
-    {
-      "src": "/(.*)",
+      "src": "(.*)",
       "dest": "src/server.ts"
     }
   ]
