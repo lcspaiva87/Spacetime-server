@@ -8,12 +8,15 @@ import { authRoutes } from './routes/auth'
 import { uploadRoutes } from './routes/upload'
 import { resolve } from 'node:path'
 import mongoose from 'mongoose'
+
 const app = fastify()
 app.register(multipart)
+
 app.register(require('@fastify/static'), {
   root: resolve(__dirname, '../uploads'),
   prefix: '/uploads',
 })
+
 const port = parseInt(process.env.PORT || '5000', 10)
 app.register(cors, { origin: true }) // full system open
 app.register(jwt, { secret: 'spacetime' })
