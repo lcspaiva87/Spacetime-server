@@ -1,20 +1,22 @@
+/* eslint-disable no-unused-vars */
 import { randomUUID } from 'node:crypto'
 import { extname } from 'node:path'
 import { FastifyInstance } from 'fastify'
-
 import { pipeline } from 'node:stream'
 import { promisify } from 'node:util'
 import admin from 'firebase-admin'
+import process from 'node:process'
 const pump = promisify(pipeline)
+const private_key = process.env.private_key?.replace(/\\n/g, '\n')
 const firebaseConfig: any = {
   type: process.env.type,
   project_id: process.env.project_id,
   private_key_id: process.env.private_key_id,
-  private_key: process.env.private_key,
+  private_key,
   client_email: process.env.client_email,
 }
-console.log(firebaseConfig)
-console.log(process.env.private_key)
+
+console.log('aqui', firebaseConfig)
 admin.initializeApp({
   credential: admin.credential.cert(firebaseConfig),
   storageBucket: 'gs://spacetime-img.appspot.com',
