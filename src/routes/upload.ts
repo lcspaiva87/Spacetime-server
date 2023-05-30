@@ -16,7 +16,6 @@ const firebaseConfig: any = {
   client_email: process.env.client_email,
 }
 
-console.log('aqui', firebaseConfig)
 admin.initializeApp({
   credential: admin.credential.cert(firebaseConfig),
   storageBucket: 'gs://spacetime-img.appspot.com',
