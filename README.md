@@ -32,7 +32,8 @@
 ```sh
 Execute this command to install all dependencies
 $ git clone https://github.com/lcspaiva87/Spacetime-server.git && cd Spacetime-web
-
+## api documentation
+https://nodejs-server-server-generated.vercel.app/docs/
 # Install the dependencies
 yarn
 ##Link Api
@@ -56,3 +57,5 @@ After your pull request is merged, you can delete your branch.
 
 Made with ♥ by Lucas Antonio
 ```
+
+
