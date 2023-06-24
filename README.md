@@ -22,21 +22,27 @@
 
 #This project was developed using the following technologies:
 
-<p align="center">
-<img src = "src/img/document.png">
-</p>
 
 - [Firebase](https://firebase.google.com/?hl=pt)
 - [NodeJs](https://nodejs.org/en)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Prisma](https://www.prisma.io/)
+## api documentation
+https://nodejs-server-server-generated.vercel.app/docs/
+
+<p align="center">
+
+<img src = "src/img/document.png">
+</p>
+
 ## How to make it work on your machine
 
 ```sh
-Execute this command to install all dependencies
-$ git clone https://github.com/lcspaiva87/Spacetime-server.git && cd Spacetime-web
 ## api documentation
 https://nodejs-server-server-generated.vercel.app/docs/
+
+Execute this command to install all dependencies
+$ git clone https://github.com/lcspaiva87/Spacetime-server.git && cd Spacetime-web
 
 # Install the dependencies
 yarn
