@@ -22,6 +22,9 @@
 
 #This project was developed using the following technologies:
 
+<p align="center">
+<img src = "src/img/document.png">
+</p>
 
 - [Firebase](https://firebase.google.com/?hl=pt)
 - [NodeJs](https://nodejs.org/en)
@@ -34,6 +37,7 @@ Execute this command to install all dependencies
 $ git clone https://github.com/lcspaiva87/Spacetime-server.git && cd Spacetime-web
 ## api documentation
 https://nodejs-server-server-generated.vercel.app/docs/
+
 # Install the dependencies
 yarn
 ##Link Api
