@@ -25,7 +25,7 @@ app.register(authRoutes)
 app.register(memoriesRoutes)
 mongoose
   .connect(
-    'mongodb+srv://lcspaiva:FmyKUhIRQ801IUqL@cluster0.rplqvhe.mongodb.net/memorie?retryWrites=true',
+    'mongodb+srv://lcspaiva:91321394lL@cluster0.rplqvhe.mongodb.net/dyanmicForm?retryWrites=true',
   )
   .then(() => {
     console.log('Conexão com o MongoDB estabelecida com sucesso!')
